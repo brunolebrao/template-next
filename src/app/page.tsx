@@ -1,5 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+
+import { Button } from 'components/Button';
+
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -37,6 +40,7 @@ export default function Home() {
           height={37}
           priority
         />
+        <Button />
       </div>
 
       <div className={styles.grid}>
@@ -91,5 +95,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
